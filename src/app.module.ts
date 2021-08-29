@@ -29,6 +29,10 @@ import { configValidationSchema } from './config.schema';
           username: config.get('DB_USERNAME'),
           password: config.get('DB_PASSWORD'),
           database: config.get('DB_NAME'),
+          migrationsRun: config.get('MIGRATION_RUN'),
+          entities: ['dist/**/*.entity{.ts,.js}'],
+          migrations: ['dist/migrations/*{.ts,.js}'],
+          logging: true,
         };
       },
     }),
