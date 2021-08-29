@@ -10,4 +10,5 @@ export const configValidationSchema = Joi.object({
   DB_NAME: Joi.string().required(),
   JWT_SECRET: Joi.string().required().default('supersecret'),
   JWT_EXPIRY: Joi.number().default(1200).required(),
+  MIGRATION_RUN: Joi.boolean().default(true),
 });

@@ -1,0 +1,19 @@
+[
+  {
+    "type": "postgres",
+    "name": "development",
+    "synchronize": false,
+    "host": "localhost",
+    "port": 5430,
+    "username": "postgres",
+    "password": "postgres",
+    "database": "task-mangement",
+    "migrationsRun": true,
+    "entities": ["dist/**/*.entity{.ts,.js}"],
+    "migrations": ["dist/migrations/*{.ts,.js}"],
+    "cli": {
+      "entitiesDir": "src/**/*.entity{ .ts,.js}",
+      "migrationsDir": "src/migrations"
+    }
+  }
+]
